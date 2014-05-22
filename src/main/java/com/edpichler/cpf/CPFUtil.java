@@ -4,14 +4,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.edpichler.cpf.ext.CPFGenerator;
-
 public class CPFUtil {
     private static final String CPF_INVÁLIDO = "CPF inválido.";
 
     /**
      * @return Return n Brazilian CPFs generated.
-     * */
+     */
     public static List<String> createCPF(int quantity) {
         if (quantity < 1) {
             return Collections.emptyList();
@@ -28,11 +26,9 @@ public class CPFUtil {
     /**
      * Validate a CPF.
      *
-     * @param cpf
-     *            only numbers.
-     * @throws IllegalArgumentException
-     *             if the checked CPF is invalid.
-     * */
+     * @param cpf only numbers.
+     * @throws IllegalArgumentException if the checked CPF is invalid.
+     */
     public static void validateCPF(String cpf) throws IllegalArgumentException {
         cpf = cpf.trim();
         if (cpf.length() != 11) {
