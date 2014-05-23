@@ -10,7 +10,7 @@ public class CPFUtil {
     /**
      * @return Return n Brazilian CPFs generated.
      */
-    public static List<String> createCPF(int quantity) {
+    public static List<String> gerarCPF(int quantity) {
         if (quantity < 1) {
             return Collections.emptyList();
         }
