@@ -7,6 +7,9 @@ import java.util.List;
 public class CPFUtil {
     private static final String CPF_INVÁLIDO = "CPF inválido.";
 
+    private CPFUtil(){
+
+    }
     /**
      * @return Return n Brazilian CPFs generated.
      */
@@ -21,6 +24,13 @@ public class CPFUtil {
             result.add(generated);
         }
         return result;
+    }
+
+    /**
+     * @return a Brazilian CPF generated.
+     */
+    public static String gerarCPF() {
+       return CPFGenerator.generate();
     }
 
     /**

@@ -3,7 +3,7 @@ package com.edpichler.cpf;
 /**
  * Random generator of numbers.
  */
-public class NumberGenerator {
+class NumberGenerator {
 
     // TODO generate array with range
 
