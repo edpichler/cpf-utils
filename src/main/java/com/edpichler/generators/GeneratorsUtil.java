@@ -1,15 +1,18 @@
-package com.edpichler.cpf;
+package com.edpichler.generators;
+
+import com.edpichler.generators.cpf.CPFGenerator;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class CPFUtil {
+public class GeneratorsUtil {
     private static final String CPF_INVÁLIDO = "CPF inválido.";
 
-    private CPFUtil(){
+    private GeneratorsUtil() {
 
     }
+
     /**
      * @return Return n Brazilian CPFs generated.
      */
@@ -30,7 +33,7 @@ public class CPFUtil {
      * @return a Brazilian CPF generated.
      */
     public static String gerarCPF() {
-       return CPFGenerator.generate();
+        return CPFGenerator.generate();
     }
 
     /**

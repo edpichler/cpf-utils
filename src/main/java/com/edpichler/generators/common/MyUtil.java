@@ -1,9 +1,9 @@
-package com.edpichler.cpf;
+package com.edpichler.generators.common;
 
 import java.util.ArrayList;
 import java.util.List;
 
-class Util {
+public class MyUtil {
     /**
      * eg: number = 1234, returns { 1, 2, 3, 4 }
      *

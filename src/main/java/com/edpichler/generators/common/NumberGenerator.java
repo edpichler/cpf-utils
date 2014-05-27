@@ -1,9 +1,9 @@
-package com.edpichler.cpf;
+package com.edpichler.generators.common;
 
 /**
  * Random generator of numbers.
  */
-class NumberGenerator {
+public class NumberGenerator {
 
     // TODO generate array with range
 

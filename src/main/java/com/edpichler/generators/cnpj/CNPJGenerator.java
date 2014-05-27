@@ -1,4 +1,7 @@
-package com.edpichler.cpf;
+package com.edpichler.generators.cnpj;
+
+import com.edpichler.generators.common.MyUtil;
+import com.edpichler.generators.common.NumberGenerator;
 
 /**
  * Created by eduardo.pichler on 27/05/2014.
@@ -29,10 +32,6 @@ public class CNPJGenerator {
         else
             digits[13] = 11 - rest;
 
-        StringBuffer asString = new StringBuffer();
-        for (int i = 0; i < digits.length; i++) {
-            asString.append(digits[i]);
-        }
-        return Long.parseLong(asString.toString());
+        return Long.parseLong(MyUtil.arrayToString(digits));
     }
 }

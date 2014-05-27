@@ -1,9 +1,12 @@
-package com.edpichler.cpf;
+package com.edpichler.generators.cpf;
+
+import com.edpichler.generators.common.MyUtil;
+import com.edpichler.generators.common.NumberGenerator;
 
 /**
  * Brazilian CPF generator.
  */
-class CPFGenerator {
+public class CPFGenerator {
 
     public static String generate() {
         int[] digits = NumberGenerator.generateArray(11);
@@ -26,6 +29,6 @@ class CPFGenerator {
             digits[10] = 0;
         else
             digits[10] = 11 - rest;
-        return Util.arrayToString(digits);
+        return MyUtil.arrayToString(digits);
     }
 }
