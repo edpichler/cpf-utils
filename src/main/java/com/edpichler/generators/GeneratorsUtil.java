@@ -1,6 +1,7 @@
 package com.edpichler.generators;
 
 import com.edpichler.generators.cpf.CPFGenerator;
+import com.edpichler.generators.cnpj.*;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,6 +12,10 @@ public class GeneratorsUtil {
 
     private GeneratorsUtil() {
 
+    }
+
+    public static String gerarCNPJ(){
+        return CNPJGenerator.generate();
     }
 
     /**

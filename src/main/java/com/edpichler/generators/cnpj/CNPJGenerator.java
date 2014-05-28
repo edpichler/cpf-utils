@@ -8,7 +8,7 @@ import com.edpichler.generators.common.NumberGenerator;
  */
 public class CNPJGenerator {
 
-    static String generate() {
+    public static String generate() {
         int[] digits = NumberGenerator.generateArray(14);
         digits[12] = 0;
         digits[13] = 0;
